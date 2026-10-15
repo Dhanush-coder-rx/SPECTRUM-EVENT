@@ -1,0 +1,91 @@
+/* General container styling */
+.our-services-container {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .our-services-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .event-types-grid {
+    display: flex;
+    flex-wrap: wrap; /* Ensure items wrap to the next row */
+    gap: 20px; /* Space between cards */
+    margin-top: 20px;
+    justify-content: space-between; /* Space out the cards */
+  }
+  
+  /* Styling for individual event cards */
+  .event-type-card {
+    width: 45%; /* Take up 45% of the available width */
+    max-width: 400px; /* Set max width for consistency */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Align content in the center */
+    transition: transform 0.3s ease; /* Optional smooth hover effect */
+  }
+  
+  /* "Z" shaped layout: left for odd cards, right for even */
+  .event-type-card:nth-child(odd) {
+    align-self: flex-start;
+  }
+  
+  .event-type-card:nth-child(even) {
+    align-self: flex-end;
+  }
+  
+  .event-type-card:hover {
+    transform: translateY(-10px); /* Optional hover effect */
+  }
+  
+  .event-type-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  /* Slider container styling */
+  .event-slider {
+    margin-top: 15px;
+  }
+  
+  .slider-image-wrapper {
+    display: flex;
+    justify-content: center; /* Horizontally center the image */
+    align-items: center; /* Vertically center the image */
+    padding: 10px; /* Add padding around each image */
+  }
+  
+  .slider-image {
+    max-width: 100%; /* Ensure images don't overflow */
+    height: 250px; /* Set a fixed height for images */
+    object-fit: cover; /* Maintain the aspect ratio while cropping */
+    border-radius: 8px; /* Add rounded corners to images */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  /* Adjust the navigation dots */
+  .slick-dots li button:before {
+    font-size: 12px; /* Make dots slightly larger */
+    color: #007bff; /* Change dot color */
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #ff5722; /* Highlight active dot */
+  }
+  
+  /* Adjust arrows styling */
+  .slick-prev,
+  .slick-next {
+    z-index: 2; /* Ensure arrows appear on top */
+    color: #007bff; /* Change arrow color */
+  }
+  
